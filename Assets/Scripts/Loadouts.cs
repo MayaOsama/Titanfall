@@ -65,7 +65,7 @@ public class Loadouts : MonoBehaviour
     {
         if(primary != "" && secondary != "")
         {
-            FindObjectOfType<Level>().GoToFirstLevel();
+            FindObjectOfType<Level>().GoToCombatLevel();
         }
         else
         {

@@ -13,14 +13,29 @@ public class Level : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void GoToFirstLevel()
+    public void GoToCombatLevel()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level 1"); // TODO change to correct scene name
     }
 
-    public void GoToGameOver()
+    public void GoToParkourLevel()
     {
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Parkour");
+    }
+
+    public void GoToGameOverParkour()
+    {
+        SceneManager.LoadScene("Game Over - Parkour");
+    }
+
+    public void GoToGameOverCombat()
+    {
+        SceneManager.LoadScene("Game Over - Combat");
+    }
+
+    public void GoToWin()
+    {
+        SceneManager.LoadScene("Win");
     }
 
     public void QuitGame()
